@@ -9,10 +9,27 @@ To get started with Android/LineageOS, you'll need to get familiar with [Source 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
 repo init https://github.com/daviiid99/sept.git -b android
+
+
 ```
 Then to sync up:
 ```
 repo sync
+```
+
+```
+rm -rf build/make && rm -rf system/sepolicy && rm -rf system/bt && rm -rf packages/apps/Trebuchet && rm -rf packages/apps/Nfc && rm -rf frameworks/native && rm -rf packages/apps/Settings && rm -rf frameworks/base
+```
+
+```
+git clone -b build https://github.com/daviiid99/sept build/make 
+git clone -b system_sepolicy https://github.com/daviiid99/sept system/sepolicy
+git clone -b system_bt https://github.com/daviiid99/sept system/bt
+git clone -b packages_apps_Trebuchet https://github.com/daviiid99/sept packages/apps/Trebuchet
+git clone -b packages_apps_Nfc https://github.com/daviiid99/sept packages/apps/Nfc
+git clone -b frameworks_native https://github.com/daviiid99/sept frameworks/native
+git clone -b packages_apps_Settings https://github.com/daviiid99/sept packages/apps/Settings
+git clone -b frameworks_base https://github.com/daviiid99/sept frameworks/base
 ```
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
