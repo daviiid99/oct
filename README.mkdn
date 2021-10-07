@@ -23,13 +23,12 @@ rm -rf frameworks/base && rm -rf frameworks/av && rm -rf frameworks/opt/telephon
 
 ```
 git clone -b android_build_core https://github.com/daviiid99/oct build/core 
-git clone -b android_frameworks_base https://github.com/daviiid99/oct system/sepolicy
-git clone -b android_frameworks_av https://github.com/daviiid99/oct system/bt
-git clone -b android_frameworks_opt_telephony https://github.com/daviiid99/oct packages/apps/Trebuchet
-git clone -b android_packages_apps_Settings https://github.com/daviiid99/oct packages/apps/Nfc
-git clone -b android_system_core https://github.com/daviiid99/oct frameworks/native
-git clone -b android_system_nfc https://github.com/daviiid99/oct packages/apps/Settings
-git clone -b android_build_core https://github.com/daviiid99/oct frameworks/base
+git clone -b android_frameworks_base https://github.com/daviiid99/oct frameworks/base 
+git clone -b android_frameworks_av https://github.com/daviiid99/oct frameworks/av
+git clone -b android_frameworks_opt_telephony https://github.com/daviiid99/oct frameworks/opt/telephony
+git clone -b android_packages_apps_Settings https://github.com/daviiid99/oct packages/apps/Settings
+git clone -b android_system_core https://github.com/daviiid99/oct system/core
+git clone -b android_system_nfc https://github.com/daviiid99/oct system/nfc
 ```
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
