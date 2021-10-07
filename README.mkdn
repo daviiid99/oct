@@ -18,18 +18,18 @@ repo sync
 ```
 
 ```
-rm -rf build/make && rm -rf system/sepolicy && rm -rf system/bt && rm -rf packages/apps/Trebuchet && rm -rf packages/apps/Nfc && rm -rf frameworks/native && rm -rf packages/apps/Settings && rm -rf frameworks/base
+rm -rf frameworks/base && rm -rf frameworks/av && rm -rf frameworks/opt/telephony && rm -rf packages/apps/Settings && srm -rf system/core && rm -rf system/nfc && rm -rf build/core 
 ```
 
 ```
-git clone -b build https://github.com/daviiid99/sept build/make 
-git clone -b system_sepolicy https://github.com/daviiid99/sept system/sepolicy
-git clone -b system_bt https://github.com/daviiid99/sept system/bt
-git clone -b packages_apps_Trebuchet https://github.com/daviiid99/sept packages/apps/Trebuchet
-git clone -b packages_apps_Nfc https://github.com/daviiid99/sept packages/apps/Nfc
-git clone -b frameworks_native https://github.com/daviiid99/sept frameworks/native
-git clone -b packages_apps_Settings https://github.com/daviiid99/sept packages/apps/Settings
-git clone -b frameworks_base https://github.com/daviiid99/sept frameworks/base
+git clone -b android_build_core https://github.com/daviiid99/oct build/core 
+git clone -b android_frameworks_base https://github.com/daviiid99/oct system/sepolicy
+git clone -b android_frameworks_av https://github.com/daviiid99/oct system/bt
+git clone -b android_frameworks_opt_telephony https://github.com/daviiid99/oct packages/apps/Trebuchet
+git clone -b android_packages_apps_Settings https://github.com/daviiid99/oct packages/apps/Nfc
+git clone -b android_system_core https://github.com/daviiid99/oct frameworks/native
+git clone -b android_system_nfc https://github.com/daviiid99/oct packages/apps/Settings
+git clone -b android_build_core https://github.com/daviiid99/oct frameworks/base
 ```
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
